@@ -1,0 +1,286 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    color: #143628;
+    background-color: #F4F6F4;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::selection{
+    background-color: #D4A373;
+    color: #F4F6F4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    color: #143628;
+    transition: all 0.2s;
+    font-weight: 800;
+}
+
+header a{
+    font-weight: 500;
+}
+
+a:hover{
+    color: #769F88;
+    transition: all 0.2s;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+img, picture, svg {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "Lora", serif;
+    font-size: 72px;
+    color: #D4A373;
+    line-height: 1.1;
+    margin-top: 40px;
+}
+
+header{
+    width: 100%;
+}
+
+.logo a, header, header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a{
+    margin-left: 16px;
+}
+
+header ul{
+    width: 280px;
+    margin-right: 16px;
+}
+
+.logo a span{
+    margin-left: 8px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.logo a img{
+    width: 48px;
+}
+
+main{
+    width: 80%;
+}
+
+.classes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.classbox{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.classbox a{
+    margin-left: 16px;
+}
+
+.classbox span{
+    margin-left: 16px;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 32px;
+}
+
+h3{
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.broadcasts{
+    margin-top: 24px;
+}
+
+.broadcasts div{
+    background-color: white;
+    padding: 8px;
+    padding-left: 16px;
+    border-radius: 20px;
+    margin-top: 16px;
+    transition: all 0.2s;
+}
+
+.broadcasts div:hover{
+    box-shadow: 0 0 10px -5px #143628;
+    transition: all 0.2s;
+}
+
+.add{
+    background-color: #F4F6F4 !important;
+}
+
+.add:hover{
+    box-shadow: 0 0 0 0 transparent !important;
+    color: #769F88;
+    cursor: pointer;
+}
+
+.news-meta {
+    font-size: 12px;
+    color: #769F88;
+}
+
+.modal {
+    margin: auto;
+    border: none;
+    border-radius: 14px;
+    padding: 0;
+    background: #F4F6F4;
+    color: #143628;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(20, 54, 40, 0.2);
+}
+
+.modal::backdrop {
+    background: rgba(20, 54, 40, 0.45);
+    backdrop-filter: blur(2px);
+}
+
+.modal-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-family: 'Lora', serif;
+    color: #143628;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #143628;
+}
+
+.modal-content label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modal-content textarea{
+    padding: 10px 12px;
+    border: 1px solid #c5d1c5;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background: #ffffff;
+    color: #143628;
+    width: 100%;
+    resize: vertical;
+    height: 80px;
+    min-height: 80px;
+    max-height: 480px;
+}
+
+.modal-content textarea:focus{
+    outline: none;
+    border-color: #769F88;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #143628;
+    color: #F4F6F4;
+}
+
+.btn-primary:hover {
+    background: #143628;
+}
+
+.btn-secondary {
+    background: #e2e8e2;
+    color: #143628;
+}
+
+a.disabled:hover{
+    color: #143628 !important;
+}
+
+.listz{
+    margin-top: 28px;
+    width: 100%;
+}
+
+.listz tr{
+    margin-top: 16px;
+}

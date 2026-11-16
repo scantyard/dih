@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФИЗ.ТЕХ - Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ФИЗ.ТЕХ">
+    <meta property="og:description" content="Сайт для 8-го физтех-класса курчатовской школы со всем, чего нет в МЭШ">
+    <meta property="og:image" content="https://example.com">
+    <meta property="og:url" content="https://xn--g1ab9a.tech">
+    <link rel="icon" href="/favicon.ico" sizes="64x64">
+    <meta name="description" content="Сайт для 8-го физтех-класса курчатовской школы со всем, чего нет в МЭШ">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/13.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/13.3.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="panamka13.png" alt="logo">
+                <span>ФИЗ.TEX</span>
+            </a>
+        </div>
+        <ul>
+            <li><a href="https://drive.google.com/drive/folders/1y_BxiC_AW_wwoMz73FmY8_EJ8Tn90faH?usp=drive_link">Задания</a></li>
+            <li><a href="olympiads.html">Олимпиады</a></li>
+            <li><a href="results.html">Зачеты</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Предметы:</h1>
+        <div class="classes">
+            <div class="classbox">
+                <h2>Генетика</h2>
+                <a href="https://docs.google.com/spreadsheets/d/1KqZ1E-19-2jENX48j5_JHMWn3de73FmiHaP36dEBXTM/edit?usp=drivesdk">Таблица</a>
+                <a href="https://drive.google.com/drive/folders/1QJbqDLg2oQ6VLQLczNgFaOneqpEzICQS?usp=sharing">Задания</a>
+                <a href="https://drive.google.com/drive/folders/16Xhg72jmey1XQ2Y20PaHwcpMAKckYOL4?usp=sharing">Материалы</a>
+                <h3>Учитель:</h3>
+                <span>Ирина</span>
+                <span>Анатольевна</span>
+                <span>Воропаева</span>
+                <a href="https://web.telegram.org/k/#2126956731">Telegram</a>
+                <a class="disabled">нет MAX</a>
+            </div>
+            <div class="classbox">
+                <h2>Физика</h2>
+                <a href="https://docs.google.com/spreadsheets/d/1V1Yks5ZTXFf0mzXgwcniAqhPjEt307HKHW_oZ1iYdNw/edit?usp=sharing">Таблица</a>
+                <a href="https://drive.google.com/drive/folders/1Fc64A9EDl2SIS03ZQr6oGoFNw1IolI5Z?usp=sharing">Задания</a>
+                <a href="https://drive.google.com/drive/folders/1OuRHtOwYBqTiyPU3K5Vv2W-zzLfK7jJG?usp=sharing">Материалы</a>
+                <h3>Учитель:</h3>
+                <span>Марк</span>
+                <span>Максимович</span>
+                <span>Голбан</span>
+                <a href="https://web.telegram.org/k/#@mrkgolban">Telegram</a>
+                <a class="disabled">нет MAX</a>
+            </div>
+            <div class="classbox">
+                <h2>Ол. Мат</h2>
+                <a href="https://docs.google.com/spreadsheets/d/1tktGFtA8HUB1K4Gk0mqx5eHnuGNSZjDC8tvcrnZHbhs/edit?gid=0#gid=0">Таблица</a>
+                <a href="https://drive.google.com/drive/folders/1zPTk8WGcLrbsKBB5_mgd3mxIgyY1ijOG?usp=sharing">Задания</a>
+                <a href="https://drive.google.com/drive/folders/1dQV1l6Ef-5FHB7B4RLmoA7xUMkgLUxnF?usp=sharing">Материалы</a>
+                <h3>Учитель:</h3>
+                <span>Владислав</span>
+                <span>Владимирович</span>
+                <span>Ломовкин</span>
+                <a class="disabled">нет Telegram</a>
+                <a class="disabled">нет MAX</a>
+            </div>
+            <div class="classbox">
+                <h2>Экс. Мат</h2>
+                <a href="https://docs.google.com/spreadsheets/d/1AhdT_GxUEZZC9n8KvR4eAXyok8Ob4WTfXxukpEfBCIg/edit?usp=drivesdk">Таблица</a>
+                <a href="https://drive.google.com/drive/folders/1eZZIKUOHqCe-oeTy7lXVGAKVyOsNwlHs?usp=sharing">Задания</a>
+                <a href="https://drive.google.com/drive/folders/1IFnrPTuwOM4qth0HNR4wtOhLFpprZd8Z?usp=sharing">Материалы</a>
+                <h3>Учитель:</h3>
+                <span>Николай</span>
+                <span>Владимирович</span>
+                <span>Королёв</span>
+                <a href="https://web.telegram.org/k/#@nickolay_kor">Telegram</a>
+                <a class="disabled">нет MAX</a>
+            </div>
+        </div>
+        <h1 id="bc">Объявления:</h1>
+        <div class="broadcasts" id="broadcastsList">
+            <div class="add" id="openModalBtn">
+                <h3>Добавить объявление</h3>
+                <span>Кликните сюда, чтобы добавить объявление</span>
+            </div>
+        </div>
+
+        <dialog id="newsModal" class="modal">
+            <form id="newsForm" class="modal-content">
+                <div class="modal-header">
+                    <h2>Новое объявление</h2>
+                </div>
+                
+                <label for="newsText">Текст объявления:</label>
+                <textarea id="newsText" rows="3" placeholder="Введите объявление" required></textarea>
+                
+                <div class="modal-actions">
+                    <button type="button" id="cancelBtn" class="btn-secondary">Отмена</button>
+                    <button type="submit" class="btn-primary">Опубликовать</button>
+                </div>
+            </form>
+        </dialog>
+
+<script src="script.js"></script>
+    </main>
+</body>
+</html>
